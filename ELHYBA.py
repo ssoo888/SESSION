@@ -36,10 +36,11 @@ token = Config.TG_BOT_TOKEN #البوت
 
 
 bot = Client(
-  'bot'+token.split(":")[0],
-  19312827, #ايبي ايدي
- '84da7f08e87849853b2fa6728e4192a2', #ايبي هاش
-  bot_token=token, in_memory=True
+  "bot",
+  api_id=Config.APP_ID,
+  api_hash=Config.API_HASH,
+  bot_token=token, 
+  in_memory=True
 )
 app = Client(
   name="session",
